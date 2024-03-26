@@ -1,59 +1,61 @@
 import './App.css'
-import Education from './Education.jsx'
+import { useState } from 'react';
+import Input from "./components/Input";
 
-function General() {
-  return (
-    < div className='generalInfo'>
-      <h3>Full Name</h3>
-      <input type='text' placeholder='Tracy Nguyen'></input>
-      <h3>Email Address</h3>
-      <input type="text" placeholder='tracyn@gmail.com' />
-      <h3>Phone</h3>
-      <input type="text" placeholder='123-456-7890' />
-    </ div >
-  )
-}
 
-// function List(props) {
+// function General() {
 //   return (
-//     <ul>
-//       {props.animals.map((animal) => {
-//         return animal.startsWith("L") ? <li key={animal}>{animal}</li> : null;
-//       })}
-//     </ul>
+//     < div className='generalInfo'>
+//       <h3>Full Name</h3>
+//       <input type='text' placeholder='Tracy Nguyen'></input>
+//       <h3>Email Address</h3>
+//       <input type="text" placeholder='tracyn@gmail.com' />
+//       <h3>Phone</h3>
+//       <input type="text" placeholder='123-456-7890' />
+//     </ div >
 //   )
 // }
 
-
-// function Button(props) {
-//   const buttonStyle = {
-//     color: props.color,
-//     fontSize: props.fontSize + 'px',
-//     borderRadius: props.borderRadius + 'px'
-//   };
-
+// function Education() {
 //   return (
-//     <button style={buttonStyle}>{props.text}</button>
-//   );
+//     <div className='education'>
+//         <h3>School</h3>
+//         <input type='text' placeholder='University of California, San Diego'></input>
+//         <h3>Degree</h3>
+//         <input type="text" placeholder='Business Psychology' />
+//         <h3>Start Date</h3>
+//         <input type="text" placeholder='09/2019' />
+//         <h3>End Date</h3>
+//         <input type="text" placeholder='06/2023' />
+//     </div>
+//   )
 // }
 
-// function App() {
-//   const animals = ['Lion', "Cow", "Snake", "Lizard"];
-
+// function Experience() {
 //   return (
 //     <div>
-//       <h1>Animals:</h1>
-//       <List animals={animals} />
-//       <Button text="Click Me!" color="blue" fontSize={12} borderRadius={10} />
-//     </div >
+//         <h3>Company Name</h3>
+//         <input type='text' placeholder='Circle K'></input>
+//         <h3>Position</h3>
+//         <input type="text" placeholder='Full Stack Web Developer' />
+//         <h3>Start Date</h3>
+//         <input type="text" placeholder='09/2019' />
+//         <h3>End Date</h3>
+//         <input type="text" placeholder='06/2023' />
+//         <h3>Description</h3>
+//         <input type="text" placeholder='Github Master' />
+//     </div>
 //   )
 // }
 
 function App() {
+  const [info, setInfo] = useState('');
   return (
-    <div>
-      <General />
-      <Education />
+    <div className='main-card'>
+      <Input
+        info={info}
+        setInfo={setInfo}
+      />
     </div>
   )
 }
