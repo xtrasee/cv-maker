@@ -1,0 +1,34 @@
+.education-container {
+    text-align: center;
+  }
+  
+  li {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    text-align: left;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 8px 0;
+  }
+  
+  li div {
+    flex-grow: 1;
+  }
+  
+  li button {
+    height: 25px;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  .school {
+    font-size: 16px;
+  }
+  
+  .degree {
+    font-size: 12px;
+  }

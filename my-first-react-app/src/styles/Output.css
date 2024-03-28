@@ -1,0 +1,130 @@
+.output-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 11in;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+  
+  .output-container>h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .output-container>h3 {
+    font-size: 14px;
+  }
+  
+  .output-container h4 {
+    font-weight: 500;
+  }
+  
+  h4.output-bold {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .output-container p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .output-container>section {
+    margin: 0.2in 0;
+  }
+  
+  .output-container h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0.2in;
+    background-color: rgb(216, 216, 216);
+  }
+  
+  .output-container .education-section,.experience-section {
+    display: flex;
+  }
+  
+  .name {
+    text-align: center;
+  }
+  
+  .cv-content {
+    margin: 0.2in 0.75in;
+  }
+  
+  .education-left, .education-right, .experience-left, .experience-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .experience-left, .education-left {
+    width: 2in;
+  }
+  
+  .education-section, .experience-section {
+    margin-bottom: 0.2in;
+  }
+  
+  .additional-details {
+    display: flex;
+    justify-content: center;
+    gap: 1in;
+  }
+  
+  .additional-details h3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .output-container .additional-details {
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    gap: 0.2in;
+    border-bottom: 1px solid grey;
+    padding-bottom: 0.1in;
+  }
+  
+  .education-section, .experience-section {
+    flex-direction: column;
+  }
+  
+  .education, .experience {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h4.output-bold {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .output-container .position {
+    font-size: 16px;
+  }
+  
+  .output-container  p {
+    margin-left: 0.25in;
+  }
+  
+  .output-container>* {
+    font-family: 'Times New Roman', Times, serif
+  }
+  
+  .output-container h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 0.1in 0;
+  }
+  
+  .output-container h2 {
+    margin-bottom: 0.2in;
+  }
+  
+  .output-container .header {
+    color: white;
+    background-color: #5c5c9e;
+    margin: 0 0 10px 0;
+    padding: 0 0 25px 0;
+  }

@@ -1,0 +1,37 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input:focus {
+    border: none;
+    outline: rgb(169, 169, 255) 1px solid;
+  }
+  
+  .style-container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .education-container .dropdown, .experience-container .dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.9px 2.9px 6px;
+    margin-top: 10px;
+    border-radius: 10px red;
+  }
+  
+  .input-container> :first-child, .input-container> :last-child{ 
+    box-shadow: rgba(0, 0, 0, 0.15) 2.9px 2.9px 6px;
+  }
