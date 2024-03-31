@@ -32,7 +32,7 @@ export default function Education({ education, setEducation }) {
                 startDate: "",
                 endDate: "",
                 id: newId,
-            }
+            },
         ]);
 
         setEditIndex(newId);
@@ -50,12 +50,13 @@ export default function Education({ education, setEducation }) {
                         item={edu}
                         fields={["school", "degree", "startDate", "endDate"]}
                         displayFields={["school", "degree"]}
-                        handleChange={(input, value) => handleEducationChange(input, value, index)}
+                        handleChange={(input, value) =>
+                            handleEducationChange(input, value, index)
+                        }
                         isEditing={editIndex === edu.id}
                         onClick={() => setEditIndex(edu.id)}
                         onSubmit={handleSubmit}
-                    >
-                    </Form>
+                    />
                     {editIndex === -1 && (
                         <button onClick={() => deleteEducation(edu.id)}>Delete</button>
                     )}
@@ -65,5 +66,5 @@ export default function Education({ education, setEducation }) {
                 <button onClick={newEducation}>Add Education</button>
             )}
         </>
-    )
+    );
 }

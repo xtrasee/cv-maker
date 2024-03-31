@@ -10,23 +10,27 @@ const defaultGeneralInfo = {
   phone: "123-456-7890",
 }
 
-const defaultEducationInfo = {
+const defaultEducationInfo = [
+  {
   school: "University of California, San Diego",
   degree: "Bachelors in Business Psychology",
   startDate: "09/2019",
   endDate: "06/2023",
   id: uuid()
-}
+  }
+]
 
-const defaultExperienceInfo = {
-  company: "Microsoff",
-  position: "Web Developer",
-  startDate: "01/2023",
-  endDate: "Present",
-  location: "San Diego",
-  description: "Made cool websites",
-  id: uuid()
-}
+const defaultExperienceInfo = [
+  {
+    company: "Microsoff",
+    position: "Web Developer",
+    startDate: "01/2023",
+    endDate: "Present",
+    location: "San Diego",
+    description: "Made cool websites",
+    id: uuid()
+  }
+]
 
 
 function App() {

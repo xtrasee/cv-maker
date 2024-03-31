@@ -78,70 +78,70 @@ export default function Experience({ experience, setExperience }) {
   );
 }
 
-function ExperienceForm({
-  experienceItem,
-  index,
-  handleExperienceChange,
-  isEditing,
-  onClick,
-  onSubmit,
-}) {
-  return (
-    <>
-      {isEditing ? (
-        <div>
-          <form onSubmit={onSubmit}>
-            <input
-              type="text"
-              value={experienceItem.company}
-              onChange={(e) =>
-                handleExperienceChange("company", e.target.value, index)
-              }
-            />
-            <input
-              type="text"
-              value={experienceItem.position}
-              onChange={(e) =>
-                handleExperienceChange("position", e.target.value, index)
-              }
-            />
-            <input
-              type="text"
-              value={experienceItem.startDate}
-              onChange={(e) =>
-                handleExperienceChange("startDate", e.target.value, index)
-              }
-            />
-            <input
-              type="text"
-              value={experienceItem.endDate}
-              onChange={(e) =>
-                handleExperienceChange("endDate", e.target.value, index)
-              }
-            />
-            <input
-              type="text"
-              value={experienceItem.location}
-              onChange={(e) =>
-                handleExperienceChange("location", e.target.value, index)
-              }
-            />
-            <input
-              type="text"
-              value={experienceItem.description}
-              onChange={(e) =>
-                handleExperienceChange("description", e.target.value, index)
-              }
-            />
-            <button type="submit">Done</button>
-          </form>
-        </div>
-      ) : (
-        <div onClick={onClick}>
-          {experienceItem.company}
-          {experienceItem.position}
-        </div>
-      )}
-    </>
-  );
-}
+// function ExperienceForm({
+//   experienceItem,
+//   index,
+//   handleExperienceChange,
+//   isEditing,
+//   onClick,
+//   onSubmit,
+// }) {
+//   return (
+//     <>
+//       {isEditing ? (
+//         <div>
+//           <form onSubmit={onSubmit}>
+//             <input
+//               type="text"
+//               value={experienceItem.company}
+//               onChange={(e) =>
+//                 handleExperienceChange("company", e.target.value, index)
+//               }
+//             />
+//             <input
+//               type="text"
+//               value={experienceItem.position}
+//               onChange={(e) =>
+//                 handleExperienceChange("position", e.target.value, index)
+//               }
+//             />
+//             <input
+//               type="text"
+//               value={experienceItem.startDate}
+//               onChange={(e) =>
+//                 handleExperienceChange("startDate", e.target.value, index)
+//               }
+//             />
+//             <input
+//               type="text"
+//               value={experienceItem.endDate}
+//               onChange={(e) =>
+//                 handleExperienceChange("endDate", e.target.value, index)
+//               }
+//             />
+//             <input
+//               type="text"
+//               value={experienceItem.location}
+//               onChange={(e) =>
+//                 handleExperienceChange("location", e.target.value, index)
+//               }
+//             />
+//             <input
+//               type="text"
+//               value={experienceItem.description}
+//               onChange={(e) =>
+//                 handleExperienceChange("description", e.target.value, index)
+//               }
+//             />
+//             <button type="submit">Done</button>
+//           </form>
+//         </div>
+//       ) : (
+//         <div onClick={onClick}>
+//           {experienceItem.company}
+//           {experienceItem.position}
+//         </div>
+//       )}
+//     </>
+//   );
+// }
