@@ -11,6 +11,7 @@
     gap: 5px;
     align-items: center;
     margin: 8px 0;
+    border: 1px solid blue;
   }
   
   li div {
@@ -31,4 +32,8 @@
   
   .degree {
     font-size: 12px;
+  }
+
+  Form input{
+    width: 90%;
   }

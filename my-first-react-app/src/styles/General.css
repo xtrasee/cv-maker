@@ -1,0 +1,27 @@
+.general-container{
+    color: #5278D2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0rem 1rem 1rem 1rem;
+    text-align: left;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: 800;
+    display:flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 0.5rem;
+}
+
+input{
+    padding: 1rem;
+    background-color: rgb(241, 241, 241);
+    color: rgb(72, 72, 72);
+    border-radius: 5px;
+    border: none;
+    text-align: left;
+    margin-top: 0.25rem;
+}

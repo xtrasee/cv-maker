@@ -1,3 +1,5 @@
+import "../styles/General.css"
+
 export default function General({ info, setInfo }) {
     const handleInfoChange = (input, value) => {
         const newInfo = { ...info, [input]: value };
@@ -6,6 +8,7 @@ export default function General({ info, setInfo }) {
 
     return (
         <form className="general-container">
+            <h1>General Information</h1>
             <label>
                 Full Name
                 <input

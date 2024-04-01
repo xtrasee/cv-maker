@@ -1,4 +1,3 @@
-import "../styles/Dropdown.css"
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
