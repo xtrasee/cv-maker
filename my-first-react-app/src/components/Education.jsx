@@ -21,7 +21,7 @@ export default function Education({ education, setEducation }) {
         setEditIndex(-1);
     }
 
-    const newEducation = () => {
+    const addNewEducation = () => {
         const newId = uuid();
 
         setEducation([
@@ -63,7 +63,7 @@ export default function Education({ education, setEducation }) {
                 </li>
             ))}
             {editIndex === -1 && (
-                <button onClick={newEducation}>Add Education</button>
+                <button onClick={addNewEducation}>Add Education</button>
             )}
         </>
     );

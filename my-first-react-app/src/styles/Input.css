@@ -23,6 +23,20 @@
     border-radius: 10px red;
   }
   
-  .input-container> :first-child, .input-container> :last-child{ 
+  .input-container> :first-child{ 
     box-shadow: rgba(0, 0, 0, 0.15) 2.9px 2.9px 6px;
+  }
+
+  @media (max-width: 1200px) {
+    .input-container{
+      flex-direction: row;
+      margin-bottom: 4rem;
+      width: 100%;
+    }
+  }
+
+  @media (max-width:750px){
+    .input-container{
+      flex-direction: column;
+    }
   }

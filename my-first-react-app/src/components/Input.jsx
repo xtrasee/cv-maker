@@ -19,12 +19,12 @@ export default function Input({
                     <General info={info} setInfo={setInfo} />
                 </div>
                 <div className="education-container">
-                    <Dropdown name="Education">
+                    <Dropdown name="Education" className="dropName">
                         <Education education={education} setEducation={setEducation}></Education>
                     </Dropdown>
                 </div>
                 <div className="experience-container">
-                <Dropdown name="Experience">
+                <Dropdown name="Experience" className="dropName">
                         <Experience experience={experience} setExperience={setExperience}></Experience>
                     </Dropdown>
                 </div>

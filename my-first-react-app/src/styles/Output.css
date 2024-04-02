@@ -19,6 +19,10 @@
   .output-container h4 {
     font-weight: 500;
   }
+
+  .position{
+    font-style: italic;
+  }
   
   h4.output-bold {
     font-size: 16px;
@@ -38,7 +42,7 @@
     font-size: 20px;
     text-align: center;
     margin-bottom: 0.2in;
-    background-color: rgb(216, 216, 216);
+    background-color: rgba(216, 216, 216, 0.665);
   }
   
   .output-container .education-section,.experience-section {
@@ -52,16 +56,6 @@
   .cv-content {
     margin: 0.2in 0.75in;
     text-align: left;
-  }
-  
-  .education-left, .education-right, .experience-left, .experience-right {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  
-  .experience-left, .education-left {
-    width: 2in;
   }
   
   .education-section, .experience-section {
@@ -119,15 +113,21 @@
     text-transform: uppercase;
     font-size: 22px;
     margin: 0.1in 0;
+    color: #5278D2;
   }
   
   .output-container h2 {
     margin-bottom: 0.2in;
   }
-  
-  .output-container .header {
-    color: white;
-    background-color: #5c5c9e;
-    margin: 0 0 10px 0;
-    padding: 0 0 25px 0;
+
+  @media (max-width: 1200px){
+    .output-container{
+      width: 100%
+    }
+  }
+
+  @media (max-width:750px){
+    .education, .experience{
+      flex-direction: column;
+    }
   }

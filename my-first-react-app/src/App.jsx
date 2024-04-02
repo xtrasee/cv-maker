@@ -27,7 +27,7 @@ const defaultExperienceInfo = [
     startDate: "01/2023",
     endDate: "Present",
     location: "San Diego",
-    description: "Made cool websites",
+    description: "Made cool websites... of course",
     id: uuid()
   }
 ]

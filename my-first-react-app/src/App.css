@@ -15,3 +15,10 @@ button{
   border-radius: 5px;
   font-size: 1rem;
 }
+
+@media (max-width: 1200px) {
+  .main-card{
+    display: flex;
+    flex-direction: column;
+  }
+}
